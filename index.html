@@ -1,26 +1,43 @@
-<!-- /about-me/index.html -->
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
-    <link rel="stylesheet" href="../style.css">
+    <title>Personal Website CS506</title>
+    <link rel = "stylesheet" href = "styles.css">
 </head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="/about-me/">About Me</a></li>
-                <li><a href="/work-experience/">Work Experience</a></li>
-                <li><a href="/projects/">Projects</a></li>
-                <li><a href="/contact/">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section>
-        <h1>Welcome to My Portfolio</h1>
-        <p>Hello! I'm a passionate developer with an interest in web development and design.</p>
-    </section>
-</body>
+    <body>
+       
+        
+        <div class = "topnav">
+         
+            <a href = "contact.html">Contact</a>
+            <a href = "projects.html">Projects</a>
+            <a href = "assignments.html">Assignments</a>
+            <a href = "workexperience.html" >Work Experience</a>
+            <a class = "active" href = "#home">About Me</a>
+        </div>
+
+        <div class="content">
+            <div class="left"  data-aos="zoom-in-right" data-aos-delay="100" data-aos-easing="ease-in-out">
+                <img src="imgs/stuartgui.jpg" alt="">
+            </div>
+    
+            <div class="right"  data-aos="zoom-in-left" data-aos-delay="100" data-aos-easing="ease-in-out">
+                <h1>Hello!  <span>My Name is Kelvin!</span></h1>
+                <p>
+                    Welcome to my personal page made exclusivley for CS506. 
+                </p>
+                <div class="icon">
+                    <img src="imgs/instagram (4).png" alt="">
+                 
+                    <img src="imgs/github.png" alt="">
+                    <img src="imgs/linkedin (1).png" alt="">
+                </div>
+            </div>
+        </div>
+    
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script> 
+    </body>
+
 </html>

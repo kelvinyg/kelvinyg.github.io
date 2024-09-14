@@ -1,0 +1,366 @@
+/* Existing Navigation Bar Styling */
+.topnav {
+    background-color: #8d8a8a;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #000000;
+    color: white;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+/* Content Section Styling */
+.content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+
+.content .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right {
+    height: 100%;
+    width: 55%;
+    padding: 5vw 4vw;
+}
+
+.right h1 {
+    font-size: 4vw;
+    line-height: 4.4vw;
+}
+
+.right h1 span {
+    color: #ecfc7f;
+}
+
+.right p {
+    font-size: 1.2vw;
+    font-weight: 600;
+    color: #666;
+    width: 80%;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+
+.left {
+    height: 100%;
+    width: 45%;
+    padding: 5vw 4vw;
+}
+
+.left img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+/* Icon Styling */
+.icon {
+    display: flex;
+    gap: 20px;
+}
+
+.icon img {
+    height: 32px;
+    width: 32px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.icon img:hover {
+    filter: blur(0.5px);
+}
+
+/* Responsive Code */
+@media (max-width: 425px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .right {
+        width: 100%;
+        height: 45%;
+        padding: 4vw 6vw;
+    }
+
+    .right h1 {
+        font-size: 9vw;
+        line-height: 9vw;
+    }
+
+    .right p {
+        font-size: 4vw;
+        width: 100%;
+        margin: 5vw 0;
+    }
+
+    .left {
+        width: 100%;
+        height: 55%;
+    }
+}
+
+/* Form Alignment */
+.alignform {
+    border-color: #000000;
+    text-align: center;
+    padding-top: 15%;
+}
+
+.vertical-center {
+    padding-left: 47%;
+}
+
+/* Styling for Work Experience Section */
+.workexp {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 40px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.workexp h1 {
+    text-align: center;
+    color: #333;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+ol {
+    list-style-type: decimal;
+    padding-left: 40px;
+    margin-bottom: 20px;
+}
+
+ol li {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 15px 0;
+    color: #333;
+}
+
+ul {
+    list-style-type: square;
+    margin-left: 30px;
+    font-size: 18px;
+}
+
+ul li {
+    color: #666;
+    margin: 5px 0;
+}
+
+ol li:hover {
+    color: #007BFF;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Responsive Work Experience Section */
+@media (max-width: 768px) {
+    .workexp {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    .workexp h1 {
+        font-size: 28px;
+    }
+
+    ol li {
+        font-size: 20px;
+    }
+
+    ul li {
+        font-size: 16px;
+    }
+}
+
+/* Styling for the project gallery */
+.page-title {
+    text-align: center;
+    font-size: 36px;
+    color: #333;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.project-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 50px;
+}
+
+.project-item {
+    width: 30%;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 40px;
+    transition: transform 0.3s ease;
+}
+
+.project-item:hover {
+    transform: scale(1.05);
+}
+
+.project-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.project-item h3 {
+    font-size: 24px;
+    margin: 15px 0;
+    color: #333;
+}
+
+.project-item p {
+    padding: 0 20px 20px;
+    color: #666;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+    .project-item {
+        width: 45%;
+    }
+
+    .page-title {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 425px) {
+    .project-item {
+        width: 90%;
+    }
+}
+
+
+/* Styling for the Assignments section */
+.assignments-container {
+    max-width: 800px;
+    height: 600px; /* Fixed height for the container */
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; /* Enables vertical scrolling */
+}
+
+.assignments-title {
+    text-align: left;
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.assignment-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease;
+}
+
+.assignment-card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.assignment-card h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #2d3e50;
+    margin-bottom: 10px;
+}
+
+.assignment-card p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.github-link {
+    display: inline-block;
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.github-link:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .assignments-container {
+        padding: 10px;
+    }
+
+    .assignments-title {
+        font-size: 24px;
+    }
+
+    .assignment-card h2 {
+        font-size: 20px;
+    }
+
+    .assignment-card p {
+        font-size: 14px;
+    }
+
+    .github-link {
+        padding: 8px 16px;
+    }
+}
