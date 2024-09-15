@@ -7,14 +7,8 @@
     <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-    <div class = "topnav">
-         
-        <a href = "/contact">Contact</a>
-        <a class = "active" href = "projects/">Projects</a>
-        <a href = "assignments.html">Assignments</a>
-        <a href = "workexperience.html" >Work Experience</a>
-        <a href = "index.html">About Me</a>
-    </div>
+    <div id="nav-placeholder"></div>
+
 
     <h1 class="page-title">My Projects</h1>
 
@@ -35,6 +29,15 @@
             <p>Hackathon Project</p>
         </div>
     </div>
+
+    <script>
+        fetch("/nav.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("nav-placeholder").innerHTML = data;
+            });
+    </script>
+    
 
 </body>
 <!--hello -->
